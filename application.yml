@@ -1,0 +1,30 @@
+server:
+  port: 2333
+  address: 0.0.0.0
+
+lavalink:
+  server:
+    password: "mypassword123"
+    sources:
+      youtube: true
+      soundcloud: true
+      twitch: true
+      http: true
+    youtubeSearchEnabled: true
+    soundcloudSearchEnabled: true
+
+plugins:
+  - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.2"
+    snapshot: false
+
+metrics:
+  prometheus:
+    enabled: false
+
+sentry:
+  dsn: ""
+
+logging:
+  level:
+    root: INFO
+    lavalink: INFO
