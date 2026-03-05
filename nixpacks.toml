@@ -1,8 +1,5 @@
-[phases.setup]
-nixPkgs = ["jdk17"]
-
 [phases.build]
-cmds = ["wget https://github.com/lavalink-devs/Lavalink/releases/download/4.0.8/Lavalink.jar"]
+cmds = ["wget -O Lavalink.jar https://github.com/lavalink-devs/Lavalink/releases/download/4.0.8/Lavalink.jar"]
 
 [start]
 cmd = "java -jar Lavalink.jar"
