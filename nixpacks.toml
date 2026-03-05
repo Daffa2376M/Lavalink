@@ -1,3 +1,6 @@
+[phases.setup]
+nixPkgs = ["jdk17_headless", "wget"]
+
 [phases.build]
 cmds = ["wget -O Lavalink.jar https://github.com/lavalink-devs/Lavalink/releases/download/4.0.8/Lavalink.jar"]
 
