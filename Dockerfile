@@ -9,4 +9,4 @@ COPY application.yml .
 
 EXPOSE 2333
 
-CMD ["java", "-jar", "Lavalink.jar"]
+CMD ["sh", "-c", "java -jar Lavalink.jar --server.port=${PORT:-2333}"]
